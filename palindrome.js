@@ -6,14 +6,13 @@ function isPalindrome(str) {
     let mid = Math.floor(len/2);
     let i = 0;
     while(i<mid) {
-        if (str[i] !== str[len-1-i]) {
-            return false;
-        }
-        return true;
+        if (str[i] !== str[len-1-i]) return false;
+        i++;
     }
+    return true;
 }
 
-const numTest = 23;
+const numTest = 1192;
 
 function setPalindrome(n) {
     let number = n+reverseNum(n);

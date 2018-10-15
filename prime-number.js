@@ -16,11 +16,9 @@ while(count<maxCount) {
 }
 
 function isPrime(n) {
-    if (n%1 || n<2) return false;
-    
     let q = Math.sqrt(n);
     for (let i=2; i<=q; i++) {
-        if (n%i === 0) return false;
+        if (n%i === 0 || n<2) return false;
     }
     return true;
 }
