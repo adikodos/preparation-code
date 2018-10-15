@@ -11,10 +11,11 @@ function selectionSort(arr) {
         temp = arr[i];
         arr[i] = arr[minIdx];
         arr[minIdx] = temp;
+        console.log(arr);
         i++;
     }
     return arr;
 }
 
-const result = selectionSort([7,5,2,4,3,9]);
+const result = selectionSort([ 5, 1, 12, -5, 2, 14, 19, 13]);
 console.log(result);

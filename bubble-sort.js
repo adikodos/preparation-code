@@ -10,11 +10,12 @@ function bubbleSort(arr) {
                 arr[j] = temp;
             }
             j++;
+            console.log(arr);
         }
         i--;
     }
     return arr;
 }
 
-const result = bubbleSort([7,5,2,4,3,9]);
+const result = bubbleSort([7,5,2,4,9,3]);
 console.log(result);
